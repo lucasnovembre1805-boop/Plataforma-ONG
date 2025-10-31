@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mãos Que Transformam | Cadastro de Voluntário</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Voluntário</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos Sociais</a></li>
+                <li><a href="cadastro.html">Quero ser Voluntário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Preencha seus Dados para se Juntar a Nós</h2>
+            <p>Todas as informações são confidenciais e usadas apenas para o processo de seleção.</p>
+        </section>
+
+        <form action="#" method="POST">
+            
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <div>
+                    <label for="nome_completo">Nome Completo:</label>
+                    <input type="text" id="nome_completo" name="nome_completo" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="cpf">CPF (apenas números):</label>
+                    <input type="text" id="cpf" name="cpf" required 
+                           minlength="11" maxlength="11"
+                           pattern="[0-9]{11}" 
+                           title="Digite 11 dígitos para o CPF (somente números).">
+                </div>
+
+                <div>
+                    <label for="data_nasc">Data de Nascimento:</label>
+                    <input type="date" id="data_nasc" name="data_nasc" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações de Contato e Localização</legend>
+
+                <div>
+                    <label for="telefone">Telefone (DDD + Número):</label>
+                    <input type="tel" id="telefone" name="telefone" required
+                           pattern="\([0-9]{2}\)\s[0-9]{4,5}-[0-9]{4}" 
+                           title="Formato: (99) 99999-9999 ou (99) 9999-9999">
+                </div>
+
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required 
+                           pattern="[0-9]{5}-[0-9]{3}" 
+                           title="Formato: 00000-000">
+                </div>
+
+                <div>
+                    <label for="endereco">Endereço (Rua, Número):</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                </div>
+
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                </div>
+
+                <div>
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">Selecione o Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </fieldset>
+            
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2025 Mãos Que Transformam.</small></p>
+    </footer>
+</body>
+</html>
