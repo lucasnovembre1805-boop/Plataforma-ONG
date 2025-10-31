@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mãos Que Transformam | Início e Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 </head>
 <body>
     <header>
-        <h1>Mãos Que Transformam</h1>
-        
-        <nav>
-            <ul>
+    <div class="container">
+        <a href="/" class="logo">Mãos que Transformam</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos Sociais</a></li>
-                <li><a href="cadastro.html">Quero ser Voluntário</a></li>
+                <li class="has-submenu">
+                    <a href="projetos.html">Projetos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Água Limpa</a></li>
+                        </ul>
+                </li>
+                <li><a href="cadastro.html" class="btn btn-primary">Doar / Voluntariar</a></li>
             </ul>
         </nav>
-    </header>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+</header>
 
     <main>
         <section>

@@ -1,0 +1,41 @@
+:root {
+    /* 1. PALETA DE CORES (Mínimo de 8 cores) */
+    --color-primary: #007BFF;       /* Azul Principal */
+    --color-primary-dark: #0056b3;  /* Estado Hover */
+    --color-secondary: #28a745;     /* Verde Ação */
+    --color-secondary-dark: #1e7e34;
+    --color-success: #28a745;       /* Feedback positivo */
+    --color-danger: #dc3545;        /* Feedback negativo */
+    --color-neutral-light: #f8f9fa; /* Fundo claro */
+    --color-neutral-dark: #343a40;  /* Texto escuro/rodapé */
+    
+    /* 2. TIPOGRAFIA (Mínimo de 5 tamanhos) */
+    --font-family-base: 'Arial', sans-serif;
+    --font-size-base: 1rem;         /* 16px */
+    --font-size-lg: 1.25rem;        /* 20px */
+    --font-size-xl: 2rem;           /* Títulos h2 */
+    --font-size-xxl: 3rem;          /* Título h1 */
+    --font-size-sm: 0.875rem;       /* Texto pequeno/Badges */
+    
+    /* 3. ESPAÇAMENTO MODULAR (Base 8px) */
+    --spacing-xs: 8px;    /* 8px */
+    --spacing-sm: 16px;   /* 16px */
+    --spacing-md: 24px;   /* 24px */
+    --spacing-lg: 32px;   /* 32px */
+    --spacing-xl: 48px;   /* 48px */
+    --spacing-xxl: 64px;  /* 64px */
+}
+
+/* Aplicação de base */
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    color: var(--color-neutral-dark);
+    line-height: 1.6;
+    background-color: var(--color-neutral-light);
+}
+
+/* Hierarquia de Títulos */
+h1 { font-size: var(--font-size-xxl); margin-bottom: var(--spacing-md); }
+h2 { font-size: var(--font-size-xl); margin-bottom: var(--spacing-sm); }
+/* Continue com h3, h4... */

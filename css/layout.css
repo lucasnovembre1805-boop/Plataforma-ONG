@@ -1,0 +1,48 @@
+/* layout.css */
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Largura máxima para desktops */
+    margin: 0 auto;
+}
+
+/* Grid de 12 Colunas para o layout principal */
+.main-grid {
+    display: grid;
+    /* 12 colunas com espaçamento de 16px entre elas */
+    grid-template-columns: repeat(12, 1fr); 
+    gap: var(--spacing-sm); 
+}
+
+/* Estilo para a Section de Projetos, por exemplo */
+.section-content {
+    /* Exemplo: ocupa 10 das 12 colunas, centralizada */
+    grid-column: 2 / span 10; 
+}
+/* layout.css - Continuação */
+
+/* 5. BREAKPOINT: TABLET VERTICAL (Abaixo de 768px) */
+@media screen and (max-width: 768px) {
+    /* Redefinir o grid para tablets, por exemplo, 4 colunas em vez de 12 */
+    .main-grid {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    .section-content {
+        /* Ocupa todas as 4 colunas */
+        grid-column: 1 / span 4;
+    }
+}
+
+/* 6. BREAKPOINT: MOBILE (Abaixo de 600px) */
+@media screen and (max-width: 600px) {
+    /* Layout Mobile: tudo em coluna única */
+    .main-grid {
+        display: block; /* Desativa o grid */
+    }
+    
+    /* Flexbox para alinhar itens na navegação mobile */
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
